@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HtmlDomStyleForjs</title>
+</head>
+
+<body>
+   <p>All JS should be calls to JS files; located just before the closing body> tag. </p>
+
+    <nav id="sitelinks">
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+    </nav>
+    <div>
+        Bonus content here: <a href="google.com"> my other site</a>! 
+    </div>
+    <script>
+    let nav_element = document.getElementById("sitelinks");
+    let nav_links = nav_element.getElementsByTagName ("a");
+    alert ("links:  " + nav_links.length);
+    </script>
+
+   
+</body>
+
+</html>
